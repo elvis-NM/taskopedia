@@ -2,11 +2,17 @@
 import ReactDOM from 'react-dom/client';
 
 function MainHeader(){
-    return(<h1>REACT COURSE</h1>)
+    return(<h1 className="text-primary">REACT COURSE</h1>)
 }
 
+const subHeaderStyle = {
+    color:"blueviolet",
+    backgroundColor:"lightgray"
+}
+
+
 function SubHeader(){
-    return(<p>This is an exciting course</p>)
+    return(<p style={subHeaderStyle}>This is an exciting course</p>)
 }
 
 
@@ -32,7 +38,7 @@ function MainBody(){
 }
 
 function Footer(){
-    return(<p>Happy Coding!</p>)
+    return(<p style={{color:"gray",backgroundColor:"black"}}>Happy Coding!</p>)
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
