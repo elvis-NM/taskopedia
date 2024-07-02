@@ -22,7 +22,7 @@ function Header(){
 function MainBody(){
     return(
         <div>
-            <p>In this course, we will learn react js by building TAskOpedia</p>
+            <p>In this course, we will learn react js by building Task-Opedia</p>
             <ul>
                 <li>Call Ben</li>
                 <li>Go to walmart</li>
