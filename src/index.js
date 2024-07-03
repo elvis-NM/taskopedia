@@ -1,27 +1,7 @@
 import ReactDOM from "react-dom/client";
 import "./CSS/style.css";
-
-function MainHeader() {
-  return <h1 className="heading1">REACT COURSE</h1>;
-}
-
-const subHeaderStyle = {
-  color: "blueviolet",
-  backgroundColor: "lightgray",
-};
-
-function SubHeader() {
-  return <p style={subHeaderStyle}>This is an exciting course</p>;
-}
-
-function Header() {
-  return (
-    <div>
-      <MainHeader></MainHeader>
-      <SubHeader></SubHeader>
-    </div>
-  );
-}
+import Header from "./Header";
+import Students from "./Students";
 
 function MainBody() {
   const whatWeWillLearn = "React JS";
@@ -40,26 +20,6 @@ function MainBody() {
       {/* <div>
                 Enter Task : <input maxLength={5} readOnly={false} placeholder="Ben"></input>
             </div> */}
-    </div>
-  );
-}
-
-function Students() {
-  const fullName = "Kris Walley";
-  const programmingExp = 2;
-  return (
-    <div classNmae="container p-4">
-      <div className="row">Students Enrolled</div>
-      <div className="row border">
-        <div className="col-2">
-          <img src={`https://ui-avatars.com/api/?name=${fullName}`}></img>
-        </div>
-        <div className="col-10">
-          {fullName}
-          <br />
-          Programming Experience {programmingExp} years
-        </div>
-      </div>
     </div>
   );
 }
