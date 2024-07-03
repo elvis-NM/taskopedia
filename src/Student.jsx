@@ -1,17 +1,17 @@
-export default function Students() {
+export default function Student(props) {
     const fullName = "Kris Walley";
     const programmingExp = 2;
     return (
       <div className="container p-4">
-        <div className="row">Students Enrolled</div>
+     
         <div className="row border">
           <div className="col-2">
-            <img src={`https://ui-avatars.com/api/?name=${fullName}`} className="w-10"></img>
+            <img src={`https://ui-avatars.com/api/?name=${props.name}`} className="w-10"></img>
           </div>
           <div className="col-10">
-            {fullName}
+            {props.name}
             <br />
-            Coding Experience {programmingExp} years
+            Coding Experience {props.experience} years
           </div>
         </div>
       </div>
