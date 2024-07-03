@@ -1,3 +1,5 @@
+import { faker } from '@faker-js/faker';
+
 export default function Student(props) {
     const fullName = "Kris Walley";
     const programmingExp = 2;
@@ -6,7 +8,7 @@ export default function Student(props) {
      
         <div className="row border">
           <div className="col-2">
-            <img src={`https://ui-avatars.com/api/?name=${props.name}`} className="w-10"></img>
+            <img src={faker.internet.avatar()} className="w-10"></img>
           </div>
           <div className="col-10">
             {props.name}
