@@ -1,5 +1,13 @@
+import logo from "../images/react.png"
+
 function MainHeader() {
-    return <h1 className="heading1">REACT COURSE</h1>;
+    return (
+
+        <div>
+            <img src={logo}></img>
+            React Course = TaskOpedia
+        </div>
+    );
   }
   
   const subHeaderStyle = {
@@ -8,7 +16,7 @@ function MainHeader() {
   };
   
   function SubHeader() {
-    return <p style={subHeaderStyle}>This is an exciting course</p>;
+    return <p style={subHeaderStyle} className="text-center">This is an exciting course</p>;
   }
   
   export default function Header() {
