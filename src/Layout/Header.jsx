@@ -19,7 +19,7 @@ function MainHeader() {
     return <p style={subHeaderStyle} className="text-center">This is an exciting course</p>;
   }
   
-  export default function Header() {
+const  Header = ()=> {
     return (
       <div>
         <MainHeader></MainHeader>
@@ -27,4 +27,4 @@ function MainHeader() {
       </div>
     );
   }
-// export default Header;
+export default Header;
